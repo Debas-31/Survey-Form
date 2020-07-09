@@ -1,0 +1,43 @@
+body {
+  background-color: rgba(241, 235, 177, 0.562);
+  margin-left: 30px;
+}
+#title {
+  padding: 10;
+  text-align: center;
+  margin: 30px 30px;
+  font-size: 25px;
+  font-weight: 900;
+}
+#description {
+  font-size: 16px;
+  align-items: center;
+  margin-top: 40px;
+}
+#survey-form {
+  font-size: 18px;
+}
+#name {
+  font-size: 14px;
+}
+#submit {
+  padding: 10px 20px;
+  margin: 10px 20px 10px 20px;
+  color: rgb(39, 39, 41);
+  background-color: lightgrey;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.background {
+  background-color: lightyellow;
+}
+.service {
+  margin: 15px;
+}
+.product {
+  margin: 15px;
+}
+.item {
+  margin: 15px;
+  justify-items: stretch;
+}

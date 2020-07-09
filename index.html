@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Joy-Customer Satisfaction Survey Form</h1>
+      <p id="description">
+        The aim of this form is to collect a feedback from our customer on
+        products and services
+      </p>
+    </header>
+    <hr />
+    <br />
+    <h3>Customer Name</h3>
+    <form id="survey-form">
+      <label for="name" id="name-label">Full name:</label>
+      <input
+        type="text"
+        id="name"
+        name="fname"
+        required
+        placeholder="Full name"
+      /><br /><br />
+
+      <label for="email" id="email-label">Email address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="email e.g: jhon@yahoo.com"
+        pattern=".+@globex.com"
+        size="30"
+        required
+      /><br /><br />
+      <fieldset>
+        <legend>
+          Please can you put your customer id below, it would help us on
+          assessment
+        </legend>
+
+        <label for="number" id="number-label">Id number:</label>
+        <input
+          type="number"
+          min="1"
+          max="20000"
+          id="number"
+          name="Customer id number"
+          required
+          placeholder="Customer id number"
+        />
+      </fieldset>
+      <br />
+      <h3>Select a feedback for</h3>
+      <div class="service">
+        <input type="radio" id="service" name="joy" value="service" />
+        <label for="service">Service</label>
+      </div>
+
+      <div class="product">
+        <input type="radio" id="product" name="joy" value="product" />
+        <label for="product">Product</label>
+      </div>
+
+      <h3>Choose a field to write a feedback</h3>
+      <div class="item">
+        <input type="checkbox" name="food stuff products" value="sami" /> food
+        stuff products
+
+        <input type="checkbox" name="delivery service" value="jack" /> delivery
+        service
+
+        <input type="checkbox" name="electronic products" value="doe" />
+        electronic products
+        <input type="checkbox" name="other" value="son" /> other
+      </div>
+
+      <br />
+      <fieldset>
+        <legend>select one catagory from dropdown list</legend>
+        <select name="Award" id="dropdown">
+          <option value="Platinum">Platinum: First level</option>
+          <option value="Gold">Gold: Second level</option>
+          <option value="Silver">Silver: Third level</option>
+        </select>
+      </fieldset>
+      <br />
+      <br />
+      <textarea name="comment">Write comment here ...</textarea> <br />
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
